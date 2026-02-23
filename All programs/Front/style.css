@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+
+* {
+    font-family: "DM Serif Text", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #f0f0f0;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+}
+
+.logo {
+    text-decoration: none;
+    color: #3A6CF4;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 700;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #3a6cf4;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+}
+
+.navigation a:hover {
+    color: black;
+}
+
+
+section {
+    padding: 100px 200px;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(./Web\(CIS\).png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.main h2 {
+    color: white;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+.main h2 span {
+    color: #4e9eff;
+    font-size: 3em;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.main h3 {
+    color: white;
+    font-size: 2em;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.main-btn {
+    color: white;
+    background-color: #3A6CF4;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    border-radius: 15px;
+    transition: 0.7s ease;
+    /*عشان نخلي الزر يكبر شوي شوي*/
+}
+
+.main-btn:hover {
+    background-color: #0A6CF4;
+    transform: scale(1.1);
+    /*sale(x,y) بتخذ */
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.7em;
+    padding-right: 30px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: #3A6CF4;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.card {
+    background-color: white;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.icon {
+    color: #3A6CF4;
+    font-size: 8em;
+    text-align: center;
+}
+
+.info {
+    text-align: center;
+}
+
+.info h3 {
+    color: #3A6CF4;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.projects {
+    background-color: #000020;
+}
+
+.projects .content {
+    margin-top: 40px;
+}
+
+.projects-card {
+    background-color: white;
+    border: 1px solid white;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+
+.projects-card:hover {
+    transform: scale(1.1);
+}
+
+.projects-image img:hover {
+    opacity: 0.9;
+}
+
+.projects-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: fill;
+    /*كان في مشكلة في الصورة الاولة ما كانت ماخذة حجم البطتقة الازم
+   height: 200px;
+    object-fit: fill; اضفنا */
+}
+
+.projects-info {
+    padding: 10px;
+}
+
+.projects-category {
+    font-size: 0.8em;
+    color: black;
+}
+
+.projects-title {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.more-details {
+    color: #3a6cf4;
+    text-decoration: none;
+}
+
+.more-details:hover {
+    color: red;
+}
+
+.contact .icon {
+    font-size: 4.5em;
+}
+
+.contact .info h3 {
+    color: black;
+}
+
+.contact .info p {
+    font-size: 1.4em;
+}
+
+.footer {
+    background-color: #000020;
+    color: white;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-title {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.footer-title span {
+    color: #3a6cf4;
+}
+
+.footer .social-icons a {
+    font-size: 1.3em;
+    padding: 0px 12px 0px 0px;
+
+}
+
+@media (max-width:1023px) {
+    header{
+        padding: 12px 20px;
+    }
+
+.navigation a {
+    padding: 10px;
+}
+
+.title{
+    font-size: 1.8em;
+}
+
+section{
+    padding: 80px 20px;
+}
+
+.main-content h2{
+font-size: 1em;
+}
+
+.main-content h3{
+    font-size: 1.6em;
+}
+
+.content{
+    flex-direction: column;
+    align-items: center;
+}
+
+}
+
+@media (max-width:641px){
+    body{
+        font-size: 12px;
+    }
+
+.main-content h2{
+    font-size: 0.8em;
+}
+.main-content h3{
+    font-size: 1.4em;
+}
+}
+
+@media (max-width:300px){
+body{
+    font-size: 10px;
+}
+}
